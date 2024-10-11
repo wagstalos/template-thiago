@@ -1,0 +1,65 @@
+h1 {
+    font-weight: 600;
+    font-size: 6.4rem;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+    line-height: 150%;
+}
+
+h4 {
+    font-size: 2rem;
+    line-height: 112%;
+}
+h1,
+h2 {
+    line-height: 112%;
+    letter-spacing: -1px;
+}
+h3,
+h4 {
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Barlow", sans-serif;
+    color: $gray-500;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 150%;
+    color: $gray-600;
+    font-family: "Nunito", sans-serif;
+}
+.subtitle {
+    color: #00d7d7;
+    display: table;
+
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 2px 15px;
+    border-radius: 25px;
+
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+.title-section {
+    font-weight: 600;
+    font-size: 3.5rem;
+
+    text-align: center;
+    margin-top: 8px;
+}

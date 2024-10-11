@@ -1,0 +1,181 @@
+.s-hero {
+    width: 100%;
+    // padding-top: 8rem;
+    height: 100vh;
+    @include flex(row, center, center);
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+        /* Gradiente escuro */ url("../img/12.jpeg") no-repeat center center;
+    background-size: cover;
+
+    // background: linear-gradient(180deg, rgba(218, 247, 245, 0) 6.5%, #daf7f5 60.89%, rgba(218, 247, 245, 0) 98.72%);
+
+    .d-flex {
+        align-items: center;
+    }
+
+    .btn-primary {
+        svg {
+            margin-right: 8px;
+            transition: transform 0.3s ease;
+            background-color: $black;
+            padding: 4px;
+            border-radius: 50px;
+        }
+
+        &:hover {
+            svg {
+                transform: translateY(-2px);
+            }
+        }
+    }
+
+    &__text {
+        margin-bottom: 3.9rem;
+        width: 50%;
+
+        .lead {
+            display: inline-flex;
+            align-items: center;
+            color: $brand-main-light;
+            font-size: 1.6rem;
+            font-weight: 500;
+            backdrop-filter: blur(4px);
+            background-color: rgba(222, 222, 222, 0.05);
+            border: 1px solid #404040;
+            padding: 0 20px;
+            border-radius: 20px;
+        }
+
+        .title {
+            font-size: 8.5rem;
+            line-height: 120%;
+            font-weight: 600;
+
+            color: $white;
+            max-width: 74rem;
+        }
+
+        .description {
+            max-width: 50rem;
+            margin-top: 3.4rem;
+            margin-bottom: 4rem;
+            font-weight: 400;
+            font-size: 2rem;
+            line-height: 150%;
+            color: $white;
+        }
+    }
+
+    &__image {
+        margin: 0 auto;
+        width: 55%;
+
+        img {
+            border-radius: 10px;
+        }
+    }
+
+    .infos {
+        position: absolute;
+        bottom: 0;
+        width: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0 auto;
+        backdrop-filter: blur(4px);
+        background-color: rgb(222 222 222 / 5%);
+        text-align: center;
+
+        border: 1px solid #60606054;
+
+        li {
+            border-bottom: 2px solid $brand-main-light;
+            padding: 9px;
+            width: 30%;
+        }
+
+        &__title {
+            color: $brand-main-light;
+            font-size: 3.5rem;
+        }
+
+        &__description {
+            font-size: 1.8rem;
+            color: $white;
+        }
+    }
+
+    @include responsive($laptop) {
+        &__text {
+            .title {
+                font-size: 3rem;
+                line-height: 110%;
+            }
+        }
+
+        .infos {
+            width: 100%;
+            bottom: 0;
+        }
+    }
+
+    @include responsive($tablet) {
+        // padding-top: 8rem;
+
+        .d-flex {
+            flex-direction: column;
+        }
+
+        &__text {
+            text-align: center;
+            width: 100%;
+
+            .btn-primary {
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+            }
+
+            .title {
+                font-size: 3rem;
+            }
+
+            .description {
+                max-width: 100%;
+                margin: 3rem auto;
+            }
+            .lead {
+                align-items: center;
+                justify-content: center;
+                span {
+                    display: none;
+                }
+            }
+        }
+
+        &__image {
+            width: 100%;
+        }
+
+        .infos {
+            width: 100%;
+            margin-left: 0;
+            flex-direction: row;
+
+            &__description {
+                font-size: 1.4rem;
+            }
+            svg {
+                width: 24px;
+            }
+        }
+    }
+
+    @include responsive($mobile) {
+        .btn-primary {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.btn-primary,
+.btn-secondary {
+    font-family: "Montserrat", sans-serif;
+    border-radius: 34px;
+
+    padding: 0 2rem 0 1rem;
+    font-size: 1.8rem;
+    line-height: 5rem;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: $brand-main-light;
+    font-weight: 500;
+    color: $brand-black;
+    transition: background-color 0.3s;
+    color: $black;
+
+    &:hover {
+        background-color: $brand-main;
+    }
+}
+
+.btn-secondary {
+    font-family: "Nunito", sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+    color: $white;
+    transition: all 0.3s ease-in;
+
+    border: 1px solid $brand-main-light;
+
+    &:hover {
+        background-color: $brand-main-light;
+        color: $white;
+    }
+}
+
+@include responsive($mobile) {
+    .btn-primary {
+        line-height: 0.8rem;
+        height: 45px;
+        padding: 0 2rem;
+        font-size: 1.5rem;
+    }
+}
