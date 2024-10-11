@@ -1,3 +1,35 @@
 .s-about {
     @include paddingSection(90px);
+    background-color: #111214;
+
+    .d-flex {
+        margin-top: 80px;
+        justify-content: space-between;
+    }
+
+    &__text {
+        width: 50%;
+
+        svg {
+            margin-top: 20px;
+        }
+
+        &-title {
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+
+        &-lead {
+            margin-top: 20px;
+            font-size: 2rem;
+            color: $white;
+
+            border-left: 2px solid $brand-main;
+            padding-left: $gutter * 2;
+        }
+    }
+
+    &__image {
+        width: 40%;
+    }
 }

@@ -71,7 +71,7 @@ header {
     }
 
     @include responsive(840px) {
-        height: 7rem;
+        height: 6rem;
         display: flex;
         align-items: center;
         nav {
