@@ -23,7 +23,7 @@
         position: relative;
         background-color: $brand-main;
         color: $black;
-        padding-top: 5.9rem;
+        padding-top: 2.9rem;
         padding-bottom: 5.9rem;
         background-image: url("../img/halteres.png");
         background-size: cover;
@@ -144,6 +144,7 @@
 
             &:hover {
                 background-color: $black;
+                color: $brand-main-light;
             }
         }
 

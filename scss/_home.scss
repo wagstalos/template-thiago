@@ -5,7 +5,7 @@
     @include flex(row, center, center);
     background:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
-        /* Gradiente escuro */ url("../img/12.jpg") no-repeat center center;
+        /* Gradiente escuro */ url("../img/12.webp") no-repeat center center;
     background-size: cover;
 
     // background: linear-gradient(180deg, rgba(218, 247, 245, 0) 6.5%, #daf7f5 60.89%, rgba(218, 247, 245, 0) 98.72%);
@@ -145,6 +145,7 @@
             .description {
                 max-width: 100%;
                 margin: 3rem auto;
+                font-size: 1.6rem;
             }
             .lead {
                 align-items: center;

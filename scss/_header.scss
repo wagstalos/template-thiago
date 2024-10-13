@@ -12,8 +12,7 @@ header {
     border: 1px solid rgba(255, 255, 255, 0.168627451);
     // -webkit-backdrop-filter: blur(4px);
     // backdrop-filter: blur(4px);
-    background-color: rgb(0 0 0 / 55%);
-    /* margin: 0 auto; */
+    background-color: rgba(0, 0, 0, 0.733);
     left: 10%;
 
     .container {
@@ -21,7 +20,7 @@ header {
     }
 
     .btn-secondary {
-        padding: 2rem 2rem;
+        padding: 1rem 2rem;
         line-height: 0;
     }
 

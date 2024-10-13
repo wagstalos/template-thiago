@@ -1,10 +1,11 @@
 .s-about {
     @include paddingSection(90px);
     background-color: #111214;
-    background-image: url("../img/boxe.png");
+    background-image: url("../img/boxe.webp");
     // background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 -50px;
+
     .d-flex {
         margin-top: 80px;
         justify-content: space-between;
