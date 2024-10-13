@@ -1,10 +1,22 @@
 .s-about {
     @include paddingSection(90px);
     background-color: #111214;
-
+    background-image: url("../img/boxe.png");
+    // background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -50px;
     .d-flex {
         margin-top: 80px;
         justify-content: space-between;
+        align-items: center;
+    }
+
+    svg {
+        padding: 4px;
+        border-radius: 4px;
+        backdrop-filter: blur(4px);
+        background-color: rgba(222, 222, 222, 0.05);
+        border: 1px solid #2a2a2a;
     }
 
     &__text {
@@ -31,5 +43,19 @@
 
     &__image {
         width: 40%;
+    }
+
+    @include responsive($tablet) {
+        .d-flex {
+            flex-direction: column;
+        }
+        &__image,
+        &__text {
+            width: 100%;
+        }
+
+        &__image {
+            margin-top: 80px;
+        }
     }
 }

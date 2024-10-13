@@ -1,3 +1,175 @@
 .s-service {
-    @include paddingSection(90px);
+    padding: 90px 0;
+    background-color: #000000;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+        /* Gradiente escuro */ url("../img/60.jpg") no-repeat center center;
+    background-size: cover;
+
+    &-title {
+        font-size: 3rem;
+        margin-bottom: 40px;
+        span {
+            font-size: 7rem;
+            color: $brand-main;
+        }
+    }
+
+    .orcamento {
+        width: 100%;
+        padding: 24px;
+        // height: 50vh;
+        margin-top: 70px;
+        position: relative;
+        background-color: $brand-main;
+        color: $black;
+        padding-top: 5.9rem;
+        padding-bottom: 5.9rem;
+        background-image: url("../img/halteres.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 402px -50px;
+        border-radius: 20px;
+
+        .btn-primary {
+            background-color: $black;
+            color: $brand-main;
+            max-width: 275px;
+
+            font-weight: 500;
+            margin-top: 55px;
+
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+
+            svg {
+                transition: transform 0.3s ease;
+            }
+
+            &:hover {
+                svg {
+                    transform: translateX(8px);
+                }
+            }
+        }
+
+        h2,
+        p {
+            text-align: left;
+        }
+
+        p {
+            max-width: 50%;
+            margin-top: 30px;
+        }
+    }
+
+    .box-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 80px;
+    }
+
+    .box {
+        width: 25%;
+        background-color: $white;
+        border: 1px solid #ececec;
+
+        border-radius: 10px;
+        padding: $gutter * 2;
+        position: relative;
+
+        .badge {
+            background-color: $brand-main;
+            padding: 4px 8px;
+            color: $brand-main;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 1.2rem;
+
+            display: table;
+            margin: 0 auto;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .d-flex-price {
+            display: flex;
+            margin-top: $gutter;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .price {
+            color: $brand-main;
+            font-weight: 600;
+        }
+
+        ul {
+            margin-top: 5rem;
+            li {
+                display: flex;
+                font-size: 1.6rem;
+
+                margin-bottom: 2rem;
+                img {
+                    margin-right: $gutter * 2;
+                }
+            }
+        }
+
+        .btn-price {
+            background-color: $brand-main;
+            color: $black;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 1.6rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 60px;
+
+            transition: all 0.3s ease;
+            margin-bottom: $gutter * 3;
+
+            &:hover {
+                background-color: $black;
+            }
+        }
+
+        &:hover {
+            border: 1px solid $brand-main;
+        }
+    }
+
+    // responsive
+
+    @include responsive(800px) {
+        .orcamento {
+            background-position: 220px 98px;
+            p {
+                max-width: 80%;
+                // margin: 0 auto;
+                margin-top: 30px;
+            }
+        }
+        .d-flex {
+            flex-direction: column;
+            margin-top: 2.5rem;
+        }
+
+        .box {
+            width: 90%;
+        }
+    }
 }
