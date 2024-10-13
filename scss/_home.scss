@@ -74,7 +74,7 @@
 
         .selo {
             position: absolute;
-            top:33px;
+            top: 33px;
             right: 23%;
             background-color: rgba(0, 0, 0, 0.55);
             border: 1px solid rgba(196, 196, 196, 0.2784313725);
@@ -83,7 +83,6 @@
             width: 100px;
             height: 100px;
             animation: girar 10s linear infinite;
-            
         }
         @keyframes girar {
             from {
@@ -93,7 +92,6 @@
                 transform: rotate(360deg); /* Completa uma rotação */
             }
         }
-
 
         img {
             border-radius: 10px;
@@ -198,9 +196,16 @@
         }
     }
 
-    // @include responsive($mobile) {
-    //     .btn-primary {
-    //         width: 100%;
-    //     }
-    // }
+    @include responsive($mobile) {
+        // .btn-primary {
+        //     width: 60%;
+        // }
+
+        &__image {
+            .selo {
+                top: 0;
+                right: 8%;
+            }
+        }
+    }
 }
