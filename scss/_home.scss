@@ -40,10 +40,10 @@
             color: $brand-main-light;
             font-size: 1.6rem;
             font-weight: 500;
-            backdrop-filter: blur(4px);
-            background-color: rgba(222, 222, 222, 0.05);
-            border: 1px solid #404040;
-            padding: 0 20px;
+            // backdrop-filter: blur(4px);
+            // background-color: rgba(222, 222, 222, 0.05);
+            // // border: 1px solid #404040;
+            // padding: 0 20px;
             border-radius: 20px;
         }
 
@@ -70,6 +70,30 @@
     &__image {
         margin: 0 auto;
         width: 55%;
+        position: relative;
+
+        .selo {
+            position: absolute;
+            top: 0;
+            right: 19%;
+            background-color: rgba(0, 0, 0, 0.55);
+            border: 1px solid rgba(196, 196, 196, 0.2784313725);
+            backdrop-filter: blur(4px);
+            border-radius: 100%;
+            width: 100px;
+            height: 100px;
+            animation: girar 10s linear infinite;
+            
+        }
+        @keyframes girar {
+            from {
+                transform: rotate(0deg); /* Início da rotação */
+            }
+            to {
+                transform: rotate(360deg); /* Completa uma rotação */
+            }
+        }
+
 
         img {
             border-radius: 10px;
