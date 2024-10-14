@@ -6,6 +6,21 @@
         /* Gradiente escuro */ url("../img/60.webp") no-repeat center center;
     background-size: cover;
 
+    .js-desconto {
+        font-size: 1.2rem;
+        background-color: red;
+        color: $white;
+        display: inline-flex;
+        padding: 0 1rem;
+        border-radius: 10px;
+    }
+
+    .js-price-old {
+        font-size: 1.2rem;
+        text-decoration: line-through;
+        font-weight: 700;
+    }
+
     &-title {
         font-size: 3rem;
         margin-bottom: 40px;
@@ -84,14 +99,14 @@
         backdrop-filter: blur(4px);
 
         &:nth-child(2) {
-            width: 20%;
+            width: 23%;
             background-image: url("../img/mao.webp");
             // background-size: cover;
             background-repeat: no-repeat;
             background-position: 200px 150px;
         }
         &:nth-child(3) {
-            width: 20%;
+            width: 23%;
             background-image: url("../img/anilhas.webp");
             // background-size: cover;
             background-repeat: no-repeat;
