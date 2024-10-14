@@ -89,7 +89,7 @@ header {
 }
 
 .menu-mobile {
-    background: $white;
+    background: rgb(17 18 20);
     border-radius: 8px;
     width: 100%;
     height: 10vh;
@@ -99,15 +99,6 @@ header {
     z-index: 12;
     display: none;
     box-shadow: 5px 1px 15px 2px rgba(0, 0, 0, 0.26);
-
-    // &::before {
-    //     content: "";
-    //     width: 100%;
-    //     height: 50vh;
-    //     background-color: #000000b5;
-    //     position: absolute;
-    //     top: -100%;
-    // }
 
     &__icons {
         position: absolute;
@@ -124,19 +115,16 @@ header {
         position: absolute;
         top: -36px;
         right: 16px;
-        background: white;
+        background: rgb(17 18 20);
         border-radius: 50px;
         width: 40px;
         height: 40px;
         padding: 8px;
-        border: 2px solid #e3e3e3;
+        border: 2px solid #323232;
     }
 
     ul {
         width: 100%;
-        // position: absolute;
-        // top: 50%;
-        // transform: translateY(-55%);
         display: flex;
         justify-content: space-evenly;
 
@@ -144,9 +132,9 @@ header {
             text-align: center;
             font-size: 1.6rem;
             margin: 24px 0;
-            font-weight: 700;
+            font-weight: 500;
             a {
-                color: $black;
+                color: $white;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -170,4 +158,21 @@ header {
     .icons-dots {
         display: none;
     }
+}
+
+//visible
+.menu-mobile {
+    display: none; /* Menu oculto inicialmente */
+}
+
+.menu-mobile.active {
+    display: block; /* Exibe o menu quando a classe 'active' é adicionada */
+}
+
+.icon-tabler-x {
+    display: none; /* Ícone de fechar oculto inicialmente */
+}
+
+.icon-tabler-x.active {
+    display: block; /* Exibe o ícone de fechar quando a classe 'active' é adicionada */
 }
