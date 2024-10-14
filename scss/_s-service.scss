@@ -158,7 +158,7 @@
     }
 
     // responsive
-    @include responsive($tablet) {
+    @include responsive(1200px) {
         &-title {
             span {
                 font-size: 6rem;

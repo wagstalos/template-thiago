@@ -6,7 +6,7 @@ footer {
     font-size: 2rem;
     font-size: 1.4rem;
     line-height: 165%;
-
+    background: radial-gradient(circle at 50% 72%, #000000 0, #1a1a1a 55%);
     z-index: 1;
     position: relative;
 
@@ -19,7 +19,7 @@ footer {
 
         h4 {
             margin-bottom: $gutter * 3;
-            color: $gray-300;
+            // color: $gray-300;
         }
 
         a {
