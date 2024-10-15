@@ -24,7 +24,6 @@
     .destaque {
         font-weight: 700;
         font-size: 5rem;
-        line-height: 60px;
     }
 
     &-title {
@@ -196,6 +195,13 @@
             span {
                 font-size: 6rem;
             }
+        }
+
+        .destaque {
+            font-weight: 700;
+            font-size: 3.5rem;
+            line-height: 100%;
+            margin-top: $gutter*3;
         }
 
         .orcamento {
