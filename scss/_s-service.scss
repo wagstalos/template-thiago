@@ -119,9 +119,10 @@
         }
 
         .badge {
-            background-color: $brand-main;
+            // background-color: $brand-main;
+            border: 1px solid $brand-main;
             padding: 4px 8px;
-            color: $brand-main;
+            color: $white;
             border-radius: 8px;
             font-weight: 500;
             font-size: 1.2rem;
