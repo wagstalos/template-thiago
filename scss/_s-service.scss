@@ -40,7 +40,7 @@
         padding: 24px;
         margin-top: 70px;
         position: relative;
-        background-color: $brand-main;
+        background-color: $brand-main-light;
         color: $black;
         padding-left: 50px;
         background-image: url("../img/halteres.png");
@@ -160,7 +160,7 @@
         }
 
         .btn-price {
-            background-color: $brand-main;
+            background-color: $brand-main-light;
             color: $black;
             font-weight: 600;
             padding: 16px;
@@ -201,7 +201,7 @@
             font-weight: 700;
             font-size: 3.5rem;
             line-height: 100%;
-            margin-top: $gutter*3;
+            margin-top: $gutter * 3;
         }
 
         .orcamento {
