@@ -24,6 +24,7 @@
     .destaque {
         font-weight: 700;
         font-size: 5rem;
+        margin-top: $gutter * 2;
     }
 
     &-title {
@@ -104,14 +105,14 @@
         backdrop-filter: blur(4px);
 
         &:nth-child(2) {
-            width: 23%;
+            width: 25%;
             background-image: url("../img/mao.webp");
             // background-size: cover;
             background-repeat: no-repeat;
             background-position: 200px 150px;
         }
         &:nth-child(3) {
-            width: 23%;
+            width: 25%;
             background-image: url("../img/anilhas.webp");
             // background-size: cover;
             background-repeat: no-repeat;
@@ -231,10 +232,23 @@
         .orcamento {
             background-position: 6px 182px;
             padding-left: $gutter * 3;
+            h2 {
+                text-align: center;
+            }
             p {
                 max-width: 100%;
                 margin-top: 30px;
                 color: #6d6d6d;
+            }
+
+            .btn-primary {
+                max-width: 100%;
+            }
+        }
+
+        .box {
+            .btn-price {
+                width: 100%;
             }
         }
     }
