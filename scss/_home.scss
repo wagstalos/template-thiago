@@ -1,14 +1,11 @@
 .s-hero {
     width: 100%;
-    // padding-top: 8rem;
     height: 100vh;
     @include flex(row, center, center);
     background:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
         /* Gradiente escuro */ url("../img/12.webp") no-repeat center center;
     background-size: cover;
-
-    // background: linear-gradient(180deg, rgba(218, 247, 245, 0) 6.5%, #daf7f5 60.89%, rgba(218, 247, 245, 0) 98.72%);
 
     .d-flex {
         align-items: center;
@@ -197,10 +194,14 @@
     }
 
     @include responsive($mobile) {
-        // .btn-primary {
-        //     width: 60%;
-        // }
+        height: auto;
+        .infos {
+            position: relative;
 
+            li {
+                padding: 0;
+            }
+        }
         &__image {
             .selo {
                 top: 0;
