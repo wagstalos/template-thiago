@@ -1,0 +1,16 @@
+# Bloqueia o acesso a todas as páginas administrativas e arquivos de configuração
+User-agent: *
+Disallow: /admin/
+Disallow: /config/
+Disallow: /login/
+Disallow: /register/
+Disallow: /sw.js
+Disallow: /manifest.json
+Disallow: /cart/
+Disallow: /checkout/
+
+# Permite que todas as outras páginas sejam indexadas
+Allow: /
+
+# Especifica a localização do sitemap
+Sitemap: https://thiagononaka.com.br/sitemap.xml
